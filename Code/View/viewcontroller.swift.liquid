@@ -1,0 +1,26 @@
+//
+//  {{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import UIKit
+
+protocol {{ module_info.name }}ViewDelegate {
+}
+
+protocol {{ module_info.name }}View: class {
+    var delegate: {{ module_info.name }}ViewDelegate? { get set }
+}
+
+class {{ module_info.name }}ViewController: UIViewController, {{ module_info.name }}View {
+    var delegate: {{ module_info.name }}ViewDelegate?
+
+    // MARK: Life cycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+
+}
