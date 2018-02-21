@@ -14,6 +14,6 @@ class {{ module_info.name }}Presenter: {{ module_info.name }}DataSource, {{ modu
     init(view: {{ module_info.name }}View, router: {{ module_info.name }}Router) {
         self.router = router
         self.view = view
-        {{ module_info.name }}.delegate = self
+        view.delegate = self
     }
 }
