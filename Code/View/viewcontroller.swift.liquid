@@ -8,12 +8,12 @@
 
 import UIKit
 
-protocol {{ module_info.name }}ViewDelegate {
+protocol {{ module_info.name }}ViewDelegate: class {
 }
 
 protocol {{ module_info.name }}View: class {
-    var delegate: {{ module_info.name }}ViewDelegate? { get set }
-    var dataSource: {{ module_info.name }}ViewDataSource? { get set }
+    weak var delegate: {{ module_info.name }}ViewDelegate? { get set }
+    var dataSource: {{ module_info.name }}ViewDataSource! { get set }
 }
 
 class {{ module_info.name }}ViewController: UIViewController, {{ module_info.name }}View {
