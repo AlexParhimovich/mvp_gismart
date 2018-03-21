@@ -10,11 +10,11 @@ import Foundation
 
 class {{ module_info.name }}Configurator {
 
-    class func configure() -> {{ module_info.name }}Router {
+    class func configure() -> UIViewController {
         let view = {{ module_info.name }}ViewController(nibName: "{{ module_info.name }}View", bundle: nil)
         let router = {{ module_info.name }}Router(view)
         let presenter = {{ module_info.name }}Presenter(view: view, router: router)
-        view.dataSource = presenter
-        return router
+        view.presenter = presenter
+        return view
     }
 }

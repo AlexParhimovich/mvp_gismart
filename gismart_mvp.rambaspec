@@ -11,6 +11,7 @@ code_files:
 # View layer
 - {name: View/ViewController.swift, path: Code/View/viewcontroller.swift.liquid}
 - {name: View/ViewDataSource.swift, path: Code/View/viewDataSource.swift.liquid}
+- {name: View/View.xib, path: Code/View/view.xib.liquid}
 
 # Presenter layer
 - {name: Presenter/Presenter.swift, path: Code/Presenter/presenter.swift.liquid}

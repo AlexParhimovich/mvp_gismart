@@ -13,12 +13,12 @@ protocol {{ module_info.name }}ViewDelegate: class {
 
 protocol {{ module_info.name }}View: class {
     weak var delegate: {{ module_info.name }}ViewDelegate? { get set }
-    var dataSource: {{ module_info.name }}ViewDataSource! { get set }
+    var presenter: {{ module_info.name }}Presenter! { get set }
 }
 
 class {{ module_info.name }}ViewController: UIViewController, {{ module_info.name }}View {
     weak var delegate: {{ module_info.name }}ViewDelegate?
-    var dataSource: {{ module_info.name }}ViewDataSource!
+    var presenter: {{ module_info.name }}Presenter!
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()

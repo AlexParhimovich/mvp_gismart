@@ -8,7 +8,7 @@
 
 class {{ module_info.name }}Router {
 
-	let viewController: {{ module_info.name }}ViewController
+	weak let viewController: {{ module_info.name }}ViewController
 
 	init(_ view: {{ module_info.name }}ViewController) {
 	    self.viewController = view
